@@ -1,0 +1,14 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.4 64.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>icon-zoom</title>
+  <g class="cls-1">
+    <path d="M101.6,111.7a22,22,0,1,1,21.1-28.1h0a22,22,0,0,1-21.1,28.1Zm0-35.5a13.6,13.6,0,0,0-3.8.5A13.5,13.5,0,1,0,114.5,86h0a13.5,13.5,0,0,0-13-9.8Z" transform="translate(-77.2 -67.7)"/>
+    <path d="M79.2,131.4h0a3.9,3.9,0,0,1-1.5-5.3l7.6-14.3a1.5,1.5,0,0,1,2-.6l4.3,2.4a1.5,1.5,0,0,1,.6,2l-7.6,14.3A3.9,3.9,0,0,1,79.2,131.4Z" transform="translate(-77.2 -67.7)"/>
+  </g>
+</svg>

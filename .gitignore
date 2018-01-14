@@ -1,0 +1,13 @@
+marina/
+resource/
+doc/
+old_html/
+images/original/
+images/old/
+.ftpconfig
+.htaccess
+nginx.conf
+*.less
+*.rar
+*.zip
+*.7z
