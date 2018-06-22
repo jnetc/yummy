@@ -85,8 +85,16 @@
       <div class="head-block">
       </div>
     </header>
-    <section class="flex justify-center flex-wrap">
-      <div class="offer-block flex">
+    <section id="offer" class="flex justify-center flex-wrap">
+      <!-- <div class="offer-box" style="background-image: url(../images/injection.jpg)">
+        <div class="of-label">ALE</div>
+        <span class="of-price">95<sup>€</sup></span>
+        <span class="of-offer">65<sup>€</sup></span>
+        <span class="of-new-item">Uutus</span>
+        <h5>Carboxy Therapya</h5>
+        <p>kiinteyttävä ja puhdistettava hoito</p>
+      </div> -->
+      <!-- <div class="offer-block flex">
         <img src="./images/offer.jpg" alt="led spa happikapseli">
       </div>
       <div class="offer-block flex justify-center align flex-column" style="display: flex">
@@ -121,7 +129,7 @@
             <p class="flex justify-center align">215€</p>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
     <h3>palvelut ja hinnat</h3>
     <section class="flex justify-center flex-wrap">
@@ -202,6 +210,23 @@
             </div>
             <h2>Vartalohoidot</h2>
             <div class="price-list-box price-list-xl flex flex-column">
+              <a href="vartalohoidot.html#7"><p>Infrapunahoitosänky 40min</p><p>30 €</p></a>
+              <div class="group-list-box">
+                <input type="radio" name="list" onclick="">
+                <ul class="group-list small-list">
+                  <li class="group-name"><span><p>Alfa LED happikapseli</p><p></p></span></li>
+                  <li><a href="vartalohoidot.html#6"><p>1krt (30min.)</p><p>35 €</p></a></li>
+                  <li><a href="vartalohoidot.html#6"><p>3krt </p><p>85 €</p></a></li>
+                </ul>
+              </div>
+              <div class="group-list-box">
+                <input type="radio" name="list" onclick="">
+                <ul class="group-list small-list">
+                  <li class="group-name"><span><p>LPG-Ergodrive kiinteyttävä ja hoikentava</p><p></p></span></li>
+                  <li><a href="vartalohoidot.html#5"><p>1krt. 30min</p><p>40 €</p></a></li>
+                  <li><a href="vartalohoidot.html#5"><p>1krt. 60min</p><p>60 €</p></a></li>
+                </ul>
+              </div>
               <div class="group-list-box">
                 <input type="radio" name="list" onclick="">
                 <ul class="group-list small-list">
@@ -321,9 +346,9 @@
                 <input type="radio" name="list" onclick="">
                 <ul class="group-list small-list">
                   <li class="group-name"><span><p>Täyteaine huulet</p><p>alk. 150 €</p></span></li>
-                  <li><span><p>Huulet 1.0ml</p><p>250 €</p></span></li>
-                  <li><span><p>Huulet 2.0ml</p><p>400 €</p></span></li>
-                  <li class="st"><sup>* Juvederm, Surgiderm, Teosyal, Dermafil</sup></li>
+                  <li><span><p>Huulet 1.0ml / Dermofil</p><p>150 €</p></span></li>
+                  <li><span><p>Huulet 1.0ml / muut*</p><p>275 €</p></span></li>
+                  <li class="st"><sup>* Juvederm, Surgiderm, Teosyal</sup></li>
                 </ul>
               </div>
               <div class="group-list-box">
@@ -335,28 +360,7 @@
                   <li><span><p>Kasvot + kaula</p><p>120 €</p></span></li>
                   <li><span><p>Kasvot + kaula + decoltee</p><p>140 €</p></span></li>
                   <li><span><p>Mesoterapia hiustenlähtöön Hair XL</p><p>110 €</p></span></li>
-                  <li class="st"><sup>* Restylaine, Teosyal</sup></li>
-                </ul>
-              </div>
-              <div class="group-list-box">
-                <input type="radio" name="list" onclick="">
-                <ul class="group-list small-list">
-                  <li class="group-name"><span><p>Täyteaine huulet</p><p>alk. 150 €</p></span></li>
-                  <li><span><p>Huulet 1.0ml</p><p>250 €</p></span></li>
-                  <li><span><p>Huulet 2.0ml</p><p>400 €</p></span></li>
-                  <li class="st"><sup>* Juvederm, Surgiderm, Teosyal, Dermafil</sup></li>
-                </ul>
-              </div>
-              <div class="group-list-box">
-                <input type="radio" name="list" onclick="">
-                <ul class="group-list medium-list">
-                  <li class="group-name"><span><p>Mesoterapia</p><p>alk. 100 €</p></span></li>
-                  <li><span><p>Vartalo</p><p>110 €</p></span></li>
-                  <li><span><p>Kasvot</p><p>100 €</p></span></li>
-                  <li><span><p>Kasvot + kaula</p><p>120 €</p></span></li>
-                  <li><span><p>Kasvot + kaula + decoltee</p><p>140 €</p></span></li>
-                  <li><span><p>Mesoterapia hiustenlähtöön Hair XL</p><p>110 €</p></span></li>
-                  <li class="st"><sup>* Restylaine, Teosyal</sup></li>
+                  <li class="st"><sup>* Restylaine, Teosyal, Dermofil</sup></li>
                 </ul>
               </div>
             </div>
@@ -521,6 +525,7 @@
 <link rel="stylesheet" type="text/css" href="./css/style.css">
 <script src="./js/jquery-3.2.1.min.js" type="text/javascript"></script>
 <script src="./js/yummi-jquery.js" type="text/javascript"></script>
+<script src="./js/yummy.js" type="text/javascript"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 </html>

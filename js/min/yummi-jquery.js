@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){$(".preloader").delay(100).fadeOut(300),$(window).scroll(function(){var t=$(".price-box"),e=$(this).scrollTop(),o=$(this).height();e>t.offset().top-o/1.2&&t.addClass("animated")})});
