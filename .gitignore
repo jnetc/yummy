@@ -5,7 +5,6 @@ doc/
 old_html/
 images/original/
 images/old/
-package.json
 package-lock.json
 .ftpconfig
 .htaccess
