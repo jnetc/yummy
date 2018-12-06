@@ -1,0 +1,353 @@
+// out: ../css/pages.css, compress: true
+
+////////////////////////////////
+//////// ЦВЕТА
+
+@bordo: #54243C;
+@rose: #CB467B;
+@belii: #fff;
+@svetloserii: #e4e3e1;
+@chernii: #000000;
+
+////////////////////////////////
+//////// ФЛЕКСЫ
+
+.flex {
+  display: flex;
+  display: -webkit-flex;
+}
+.justify-center {
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+}
+.align {
+  align-items: center;
+  -webkit-align-items: center;
+}
+.aling-end {
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+}
+.flex-column {
+  flex-flow: column;
+  -webkit-flex-flow: column;
+}
+.flex-row {
+  flex-flow: row;
+  -webkit-flex-flow: row;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+////////////////////////////////
+////////  ДЕЙСТВИЕ МЫШИ
+
+.mouse-event {
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+}
+
+////////////////////////////////
+//////// ОСНОВНЫЕ
+
+@font-face {
+	font-family: 'Exo-Thin';
+	src: url('../fonts/exo-thin.woff') format('woff');
+}
+@font-face {
+	font-family: 'Exo-Regular';
+	src: url('../fonts/exo-regular.woff') format('woff');
+}
+
+* {
+	outline: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+	background-color: @bordo;
+}
+a,
+a:active,
+a:focus,
+a:hover {
+  color: @svetloserii;
+ 	text-decoration: none;
+}
+p, pre, li, a {
+  font-family: 'Exo-Regular';
+  letter-spacing: 1px;
+}
+ul {
+  list-style: none;
+}
+header,
+section,
+footer {
+  position: relative;
+
+}
+::selection {
+  background: #5b81a2;
+}
+
+////////////////////////////////
+//////// ШАПКА
+
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+  background: @bordo;
+}
+header {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 70px;
+  z-index: 1;
+  &::after {
+    content: '';
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: no-repeat center url(../images/kasvohoidot.jpg);
+    background-size: cover;
+    filter: brightness(0.6);
+    z-index: -1;
+  }
+  &::before {
+    content: '';
+    width: 102%;
+    height: 53px;
+    position: absolute;
+    left: -7px;
+    right: 0px;
+    bottom: 0px;
+    background: no-repeat url(../images/grunge-bordo.svg);
+    background-size: cover;
+  }
+  h1 {
+    margin: auto;
+    color: @belii;
+    font-size: 70px;
+    font-family: 'Exo-Regular';
+    font-weight: normal;
+    text-transform: uppercase;
+    text-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+    z-index: 5;
+  }
+}
+
+////////////////////////////////
+//////// ТЕЛО
+
+section {
+  width: 100%;
+  height: auto;
+  .justify-between;
+  margin-bottom: 70px;
+  padding: 20px ;
+  position: relative;
+  color: @belii;
+  background: @bordo;
+}
+article {
+  width: 70%;
+  height: auto;
+  h2 {
+    margin: 25px 0px 15px;
+    font-size: 30px;
+    font-family: 'Exo-Thin';
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  span {
+    // margin: 0px 0px 0px 15px;
+    position: relative;
+    top: -15px;
+    font-size: 14px;
+    font-family: 'Exo-Thin';
+    text-align: center;
+  }
+  p {
+    margin: 0px 0px 15px;
+    font-size: 18px;
+    // font-family: 'Exo-Thin';
+    text-align: center;
+    text-transform: uppercase;
+  }
+  pre {
+    margin: 0px 0px 15px;
+    white-space: pre-wrap;
+  }
+  img {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto 20px;
+    position: relative;
+    border: 5px solid @belii;
+    border-radius: 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    .mouse-event;
+    &:hover {
+      filter: brightness(1.1);
+      -webkit-filter: brightness(1.1);
+    }
+  }
+}
+
+////////////////////////////////
+//////// КОНТАКТЫ
+
+footer {
+  width: 100%;
+  height: auto;
+  position: relative;
+  color: @belii;
+  background-color: @bordo * 1.2;
+  // Иконки
+  a {
+    width: 80px;
+    height: 80px;
+    .flex;
+    .justify-center;
+    .align;
+    margin: 20px 10px;
+    border: 4px solid transparent;
+    border-radius: 50%;
+    background: @belii;
+    .mouse-event;
+    svg {
+      width: 50px;
+      height: 50px;
+      fill: @bordo;
+      .mouse-event;
+    }
+    &:hover {
+      background: @rose;
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+      transform: translateY(-5px);
+    }
+
+    &:hover svg {
+      fill: @belii;
+    }
+  }
+  // Контактные данные
+  h2 {
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-family: 'Exo-Regular';
+    text-align: center;
+    text-transform: uppercase;
+  }
+  ul {
+    width: 150px;
+  }
+}
+.footer-box {
+  width: 600px;
+  margin: 30px 0px;
+}
+
+// Yummy Beauty © 2017
+.wrapper > p {
+  padding-bottom: 10px;
+  color: @belii * 0.7;
+  font-size: 12px;
+  text-align: center;
+  background: @bordo * 1.2;
+}
+
+/*
+
+||||||||||||||||||||||||||||||||
+======== Маштабирование ========
+||||||||||||||||||||||||||||||||
+
+*/
+
+////////////////////////////////////////
+@media (max-width: 1220px) {
+.wrapper {
+	width: 100%;
+}
+section {
+  .justify-center;
+}
+}
+////////////////////////////////////////
+@media (max-width: 1200px) {
+
+// КОНТКТЫ
+.footer-box:nth-of-type(1) {
+  margin-bottom: 0px;
+}
+}
+////////////////////////////////////////
+@media (max-width: 779px) {
+header h1 {
+  font-size: 45px;
+}
+section {
+  padding: 10px;
+}
+article {
+  width: 100%;
+  h2 {
+    font-size: 25px;
+  }
+}
+}
+////////////////////////////////////////
+@media (max-width: 779px) and (min-width: 480px){
+
+// КОНТКТЫ
+.footer-box {
+  width: 100%;
+}
+}
+////////////////////////////////////////
+@media (max-width: 479px) and (min-width: 320px) {
+
+
+}
+////////////////////////////////////////
+@media screen and (orientation:landscape) {
+.wrapper {
+  min-height: 480px;
+}
+}
+////////////////////////////////////////
+@media screen and (orientation:portrait) {
+.wrapper {
+  min-height: 480px;
+}
+}

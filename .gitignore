@@ -9,7 +9,6 @@ package-lock.json
 .ftpconfig
 .htaccess
 nginx.conf
-*.less
 *.rar
 *.zip
 *.7z
